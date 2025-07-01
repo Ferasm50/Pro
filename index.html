@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع شخصي تعريفي - فراس محمد - مطور ويب">
+    <meta name="keywords" content="مطور ويب, برمجة, HTML, CSS, JavaScript">
+    <meta name="author" content="فراس محمد">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="فراس محمد - مطور ويب">
+    <meta property="og:description" content="موقع شخصي تعريفي لمطور ويب متخصص في تقنيات الويب الحديثة">
+    <meta property="og:type" content="website">
+    
+    <title>فراس محمد - مبرمج ومطور ويب</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p data-ar="جاري التحميل..." data-en="Loading...">جاري التحميل...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span data-ar="فراس محمد" data-en="Feras Mohameed">فراس محمد</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-ar="من أنا" data-en="About">من أنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-ar="مهاراتي" data-en="Skills">مهاراتي</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-ar="مشاريعي" data-en="Projects">مشاريعي</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-ar="تواصل معي" data-en="Contact">تواصل معي</a>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <!-- Language Toggle -->
+                <button class="lang-toggle" id="lang-toggle" title="تبديل اللغة">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+                
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" id="theme-toggle" title="تبديل الوضع">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="فراس محمد" class="profile-img">
+                    <div class="hero-image-bg"></div>
+                </div>
+                
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span data-ar="مرحباً، أنا" data-en="Hello, I'm">مرحباً، أنا</span>
+                        <span class="highlight" data-ar="فراس محمد " data-en="Feras Mohameed">فراس محمد</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle" data-ar="مطور ويب متخصص في تقنيات الويب الحديثة" data-en="Web Developer specialized in modern web technologies">
+                        مطور ويب متخصص في تقنيات الويب الحديثة
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary" data-ar="ابدأ الاستكشاف" data-en="Start Exploring">
+                            ابدأ الاستكشاف
+                        </a>
+                        <a href="https://wa.me/967739684154?text=مرحبا%20اريد%20تفاصيل%20اكثر%20عن%20خدمات%20التي%20تقدمها%20في%20موقعك" target="_blank" class="btn btn-secondary" data-ar="تواصل معي  " data-en="Contact">
+                            <i class="fas fa-download"></i>
+                            <span data-ar="   تواصل معي " data-en="Contact">تواصل معي </span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <p data-ar="مرر للأسفل" data-en="Scroll Down">مرر للأسفل</p>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="floating-element" style="top: 20%; left: 10%;"></div>
+            <div class="floating-element" style="top: 60%; right: 15%;"></div>
+            <div class="floating-element" style="bottom: 20%; left: 20%;"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="من أنا" data-en="About Me">من أنا</h2>
+                <p class="section-subtitle" data-ar="تعرف على خلفيتي وخبراتي" data-en="Learn about my background and experience">
+                    تعرف على خلفيتي وخبراتي
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3 data-ar="مطور ويب شغوف بالتقنيات الحديثة" data-en="Passionate Web Developer with Modern Technologies">
+                        مطور ويب شغوف بالتقنيات الحديثة
+                    </h3>
+                    
+                    <p data-ar="أنا مطور ويب متخصص في إنشاء مواقع ويب حديثة وتطبيقات تفاعلية باستخدام أحدث التقنيات. أتمتع بخبرة واسعة في تطوير الواجهات الأمامية والخلفية، مع التركيز على تجربة المستخدم وأداء الموقع." data-en="I am a web developer specialized in creating modern websites and interactive applications using the latest technologies. I have extensive experience in frontend and backend development, focusing on user experience and website performance.">
+                        أنا مطور ويب متخصص في إنشاء مواقع ويب حديثة وتطبيقات تفاعلية باستخدام أحدث التقنيات. أتمتع بخبرة واسعة في تطوير الواجهات الأمامية والخلفية، مع التركيز على تجربة المستخدم وأداء الموقع.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-ar="مشروع مكتمل" data-en="Projects Completed">مشروع مكتمل</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-ar="رضا العملاء" data-en="Client Satisfaction">رضا العملاء</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left">
+                    <div class="about-img-container">
+                        <img src="images/profile.jpg" alt="فراس محمد">
+                        <div class="about-img-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="مهاراتي" data-en="My Skills">مهاراتي</h2>
+                <p class="section-subtitle" data-ar="التقنيات والأدوات التي أتقنها" data-en="Technologies and tools I master">
+                    التقنيات والأدوات التي أتقنها
+                </p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 data-ar="تطوير الواجهات الأمامية" data-en="Frontend Development">تطوير الواجهات الأمامية</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3 data-ar="تطوير الخوادم" data-en="Backend Development">تطوير الخوادم</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Others -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3 data-ar="الأدوات والتقنيات الأخرى" data-en="Tools & Others">الأدوات والتقنيات الأخرى</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">WordPress</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Photoshop</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="مشاريعي" data-en="My Projects">مشاريعي</h2>
+                <p class="section-subtitle" data-ar="أحدث أعمالي ومشاريعي" data-en="My latest works and projects">
+                    أحدث أعمالي ومشاريعي
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/lastproject8.jpg" alt="مشروع 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة المشروع">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="الكود المصدري">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-ar="موقع تجارة إلكترونية" data-en="E-commerce Website">موقع تجارة إلكترونية</h3>
+                        <p class="project-description" data-ar="موقع تجارة إلكترونية متكامل مع نظام دفع آمن وإدارة المنتجات" data-en="Complete e-commerce website with secure payment system and product management">
+                            موقع تجارة إلكترونية متكامل مع نظام دفع آمن وإدارة المنتجات
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/f2.jpg" alt="مشروع 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة المشروع">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="الكود المصدري">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-ar="تطبيق إدارة المهام" data-en="Task Management App">تطبيق إدارة المهام</h3>
+                        <p class="project-description" data-ar="تطبيق ويب لإدارة المهام والمشاريع مع واجهة مستخدم حديثة" data-en="Web application for task and project management with modern user interface">
+                            تطبيق ويب لإدارة المهام والمشاريع مع واجهة مستخدم حديثة
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/lastproject9.jpg" alt="مشروع 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة المشروع">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="الكود المصدري">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-ar="موقع شركة" data-en="Corporate Website">موقع شركة</h3>
+                        <p class="project-description" data-ar="موقع شركة احترافي مع تصميم متجاوب ونظام إدارة المحتوى" data-en="Professional corporate website with responsive design and content management system">
+                            موقع شركة احترافي مع تصميم متجاوب ونظام إدارة المحتوى
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="images/j3.jpg" alt="مشروع 4">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة المشروع">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="الكود المصدري">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-ar="تطبيق الطقس" data-en="Weather App">تطبيق الطقس</h3>
+                        <p class="project-description" data-ar="تطبيق ويب لعرض حالة الطقس مع توقعات مفصلة وخرائط تفاعلية" data-en="Web application for weather display with detailed forecasts and interactive maps">
+                            تطبيق ويب لعرض حالة الطقس مع توقعات مفصلة وخرائط تفاعلية
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Charts.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+                <p class="section-subtitle" data-ar="لنتعاون معاً في مشروعك القادم" data-en="Let's collaborate on your next project">
+                    لنتعاون معاً في مشروعك القادم
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 data-ar="معلومات التواصل" data-en="Contact Information">معلومات التواصل</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+                            <p>frasmhmmad@gamil.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-ar="الهاتف" data-en="Phone">الهاتف</h4>
+                            <p>+967 739 684 154</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-ar="الموقع" data-en="Location">الموقع</h4>
+                            <p data-ar="الحديدة، اليمن " data-en="Hodeidah, Yeman">الحديدة، اليمن </p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="mailto:frasmhmmad@gmail.com?subject=استفسار من موقعك&body=مرحبا%20اريد%20استفسار%20عن%20خدماتك%20التي%20تقدمها" class="social-link" title="البريد الإلكتروني">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+                        <a href="Feras_Mohammed.vcf" class="social-link" title="حفظ جهة اتصال">
+                            <i class="fas fa-address-book"></i>
+                        </a>
+                       
+                        <a href="https://wa.me/967739684154?text=مرحبا%20اريد%20تفاصيل%20اكثر%20عن%20خدمات%20التي%20تقدمها%20في%20موقعك" class="social-link" title="WhatsApp" >
+                            <i class="fab fa-whatsapp"></i>
+                        
+                        </a>
+                        
+                        <a href="https://t.me/feras_m50" class="social-link" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://www.instagram.com/feras_m50/" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                            <a href="https://github.com/feras_m50" class="social-link" title="GitHub" >
+                                <i class="fab fa-github"></i>
+                            </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-ar="الاسم" data-en="Name">الاسم</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject" data-ar="الموضوع" data-en="Subject">الموضوع</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p data-ar="© 2024 فراس محمد . جميع الحقوق محفوظة." data-en="© 2024 Feras Mohammed. All rights reserved.">
+                        ©  2024 فراس محمد . جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    <a href="#about" data-ar="من أنا" data-en="About">من أنا</a>
+                    <a href="#projects" data-ar="مشاريعي" data-en="Projects">مشاريعي</a>
+                    <a href="#contact" data-ar="تواصل معي" data-en="Contact">تواصل معي</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
